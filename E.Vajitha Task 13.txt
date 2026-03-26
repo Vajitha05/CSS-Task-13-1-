@@ -1,0 +1,86 @@
+1.Create a box that takes up 80% of the screen width but no more than 600px.
+
+Ans: <!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  width: 80%;
+  max-width: 600px;
+  background-color: lightblue;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+  This box takes 80% width but not more than 600px.
+</div>
+
+</body>
+</html>
+
+2.Set a paragraph’s font size to 1.5rem and explain how it behaves on different devices.
+
+Ans: rem (root em) is a CSS unit based on the font size of the root <html> element.
+
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  font-size: 1.5rem;
+}
+</style>
+</head>
+<body>
+
+<p>This is a paragraph with 1.5rem font size.</p>
+
+</body>
+</html>
+
+3.Use vw to make a heading that scales with screen size.
+
+Ans: <!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  font-size: 5vw; 
+}
+</style>
+</head>
+<body>
+
+<h1>Responsive Heading</h1>
+
+</body>
+</html>
+
+4.Write a media query that changes background color below 768px.
+
+Ans: <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: lightcoral;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Resize the screen</h2>
+
+</body>
+</html>
